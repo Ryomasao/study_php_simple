@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>新規登録画面</title>
+    </head>
+    <body>
+        <h1>new register</h1>
+        <h2>
+            <?php
+                echo $signUpMessage;
+            ?>
+        </h2>
+        <form action="" id="loginForm" name="loginForm" method="POST">
+            <fieldset>
+                <legend>enter your profile</legend>
+                <div>
+                    <!--なんか入るかも-->
+                </div>
+                <label for="userid">USERID</label>
+                <input type="text" id="userid" name="userid">
+                <br>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="passwrod" name="password">
+                <br>
+                <input type="submit" id="signup" name="signup" value="signup">
+            </fieldset>
+        </form>
+
+        <br>
+        <form action="login.php">
+            <input type="submit" value="login">
+        </form>
+    </body>
+</html>

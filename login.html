@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ログイン画面</title>
+        <script src="./javascript/asy.js"></script>
+    </head>
+    <body>
+        <h1>test</h1>
+        <form action="" id="loginForm" name="loginForm" method="POST">
+            <fieldset>
+                <legend>ログインフォーム</legend>
+                <div>
+                    <!--なんか入るかも-->
+                </div>
+                <label for="userid">USERID</label>
+                <input type="text" id="userid" name="userid">
+                <br>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="passwrod" name="password">
+                <br>
+                <input type="submit" id="login" name="login" value="sing in">
+            </fieldset>
+        </form>
+        <form action="signup.php">
+            <fieldset>
+               <legend>SignUP</legend>
+               <input type="submit" value="signup">
+            </fieldset>
+        </form>
+
+        <h2>sessionに値を追加する</h2>
+        <input type="button" value="Add value on Session" id="session-button"/>
+
+        <h2>
+            session:
+            <?php
+                echo $_SESSION["id"];
+            ?>
+
+        </h2>
+        
+    </body>
+</html>
